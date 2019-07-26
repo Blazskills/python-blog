@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>View Articles</title>
+    </head>
+    <body>
+        <ul>
+            {% for articles in all_contents %}
+            <li>{{articles.title}}</li>
+            <li>{{articles.author}}</li>
+            <li>{{articles.images}}</li>
+            <li>{{articles.brief}}</li>
+            <li>{{articles.content}}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

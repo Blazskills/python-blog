@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Hello static</title>
+    </head>
+
+    <style>
+*{
+    background-color: black;
+}
+        
+.img_1{
+    height: 600;
+    width: 1250;
+    position: relative;
+    left: 60px;
+    top:25px;
+}
+
+    </style>
+
+    <body>
+        <!-- <img src="{{url_for('static',filename='1.JPG')}}" alt=""> -->
+
+    <section><div> <img src="{{url_for('static',filename='1.JPG')}}" alt="Smiley face" class="img_1"> </div></section> 
+    <img src="{{url_for('static',filename='2.JPG')}}" alt="Smiley face" cla@5ss="img_1">
+        
+    </body>
+</html>

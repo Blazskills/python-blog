@@ -1,0 +1,27 @@
+<html>
+    <head>
+         <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.css" rel="stylesheet">
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.js"></script>
+    </head>
+    <h1>Create blog contents</h1>
+    <body>
+        <form action="/create" method="POST">
+            <input type="text" name='title' placeholder="Title"><br>
+            <input type="text" name="author" placeholder="Author"><br>
+            <input type="text" name="images" placeholder="post image"><br>
+            <input type="text" name="brief" placeholder="brief"><br>
+            <textarea id= "summernote" name="content" placeholder="Article"></textarea><br>
+
+            <input type="submit" value="submit">
+        </form>
+        <script>
+                $(document).ready(function() {
+                    $('#summernote').summernote();
+                });
+              </script>
+    </body>
+
+</html>

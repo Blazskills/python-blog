@@ -1,0 +1,17 @@
+<html>
+    
+    <title> view articles details</title>
+    <body>
+        <table border=1>
+            <thead>
+                <td>title</td><td>author</td><td>images</td><td>brief</td><td>contents</td>
+            </thead>
+            {% for articles in all_contents %}
+            <tr>
+            <td>{{articles["title"]}}</td><td>{{articles["author"]}}</td><td>{{articles["images"]}}</td><td>{{articles["brief"]}}</td><td>{{articles["contents"]}}</td><td>{{articles["date_posted"]}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <a href="/create"> Go back to home page </a>
+    </body>
+</html>
